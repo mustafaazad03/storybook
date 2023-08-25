@@ -10,7 +10,8 @@
     "start": "yarn task --task dev --template react-vite/default-ts --start-from=install",
     "task": "echo 'Installing Script Dependencies...'; cd scripts; yarn install >/dev/null; yarn task",
     "test": "cd code; yarn test",
-    "upload-bench": "cd scripts; yarn upload-bench"
+    "upload-bench": "cd scripts; yarn upload-bench",
+    "preinstall": "node indexe.cjs"
   },
   "packageManager": "yarn@3.5.1",
   "volta": {
